@@ -1,0 +1,309 @@
+/* Allmänt styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+/* Huvudheader */
+header.huvud {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000; /* Svart bakgrund som på TaylorMade */
+  color: white;
+  padding: 20px;
+}
+
+header.huvud img {
+  height: 50px; /* Justera bildens höjd */
+}
+
+.introtext {
+  text-align: right;
+}
+
+.introtext h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.introtext p {
+  margin: 5px 0 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Hamburger-menyn */
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: gray;
+  z-index: 1000;
+}
+
+/* Sidomeny med Flexbox */
+.side-menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Dölj menyn initialt */
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu ul li {
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.side-menu ul li a:hover {
+  background-color: #575757;
+}
+
+/* När menyn är öppen */
+.side-menu.open {
+  left: 0;
+}
+/* Nyhetscontainer */
+.continer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Mellanrum mellan nyhetselement */
+  padding: 20px;
+}
+
+/* Nyheter */
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  h2 {
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+}
+
+/* Bilderna i nyhetssektionen */
+.newsimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.newsimg img {
+  width: 200px;
+  height: auto;
+}
+
+.newsimg figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+/*andra boxen*/
+.Mellanboxen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textAndraboxen {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: -10px;;
+  
+}
+
+.q10 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  gap: 20px;
+}
+.q10 img {
+  width: 200px;
+  height: auto;
+}
+
+/*team logo och sen text */
+
+.teamlogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  /* border:1px solid red; */
+}
+
+.teamlogo img {
+  width: 400px;
+}
+
+/* Proffsen */
+.proffsen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+  padding: 20px; 
+  background-color: #f5f5f5; 
+}
+
+/* Proffs figure */
+.proffs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px; /* Maxbredd för att hålla bilderna i en bra storlek */
+  padding: 10px; /* Padding för att skapa utrymme runt varje bild */
+  background-color: #fff; 
+  border-radius: 8px; /* Rundade hörn för en mjukare look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Skugga för att ge djup */
+  overflow: hidden; 
+}
+
+/* Bildinställningar i varje proffs */
+.proffs img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+/* Bildtextinställningar i varje proffs */
+.proffs figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+/*inlogging*/
+
+.inlogging {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding: 8px;
+ border-radius: 8px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ margin-left: -25px;
+ 
+
+ 
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+  margin-top: -10px;
+  margin-left: -10px;
+  
+  
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/*social buttons*/
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.social-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.facebook {
+  background-color: #3b5998;
+}
+.instagram {
+  background-color: #e4405f;
+}
+.youtube {
+  background-color: #ff0000;
+}
