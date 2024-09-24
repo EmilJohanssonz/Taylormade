@@ -45,7 +45,7 @@ taylormade-website/
 Include any relevant screenshots of your project here <img width="960" alt="Skärmbild 2024-09-19 170346" src="https://github.com/user-attachments/assets/69b29695-9d66-4c58-a055-e8a342dc2901"> <img width="960" alt="Skärmbild 2024-09-19 170532" src="https://github.com/user-attachments/assets/57ef82e8-48e9-4b39-a94e-bfb3fbecc0d3">
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, issues, and feature requests are welcome!
 
 
 
