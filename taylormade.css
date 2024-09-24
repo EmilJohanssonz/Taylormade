@@ -298,7 +298,10 @@ a:hover {
   font-weight: bold;
   text-align: center;
 }
-.facebook {
+
+footer {
+
+  .facebook {
   background-color: #3b5998;
 }
 .instagram {
@@ -306,4 +309,5 @@ a:hover {
 }
 .youtube {
   background-color: #ff0000;
+}
 }
